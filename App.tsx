@@ -1,11 +1,10 @@
-import { StatusBar } from 'expo-status-bar'
 import { StyleSheet, Text, View } from 'react-native'
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Lucas Fernandes</Text>
-      <StatusBar style="auto" />
+      <Text style={styles.eventName}>Nome do Evento</Text>
+      <Text style={styles.eventDate}>Segunda, 23 de Janeiro de 2023</Text>
     </View>
   );
 }
@@ -13,8 +12,14 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
+    backgroundColor: "#131016",
+    padding: 24,
   },
+  eventName: {
+    color: "#FDFCFE",
+    fontSize: 24,
+    fontWeight: "bold",
+    marginTop: 48,
+  },
+  eventDate: { color: "#6B6B6B", fontSize: 16 },
 });
